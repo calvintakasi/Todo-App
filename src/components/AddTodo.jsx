@@ -6,13 +6,13 @@ function AddTodo() {
           type="text"
           name="todo"
           placeholder="Enter your task"
-          className=" w-64 px-4 py-2 border border-rounded-300 rounded-lg shadow-sm bg-amber-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className=" w-64 px-4 py-2 border border-rounded-300 rounded-lg shadow-sm  focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
 
         <input
           type="date"
           name="date"
-          className=" w-48 px-4 py-2 border border-rounded-300 rounded-lg shadow-sm bg-amber-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className=" w-48 px-4 py-2 border border-rounded-300 rounded-lg shadow-sm bfocus:outline-none focus:ring-2 focus:ring-blue-500"
         />
 
         <button className="relative inline-flex w-30 h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">

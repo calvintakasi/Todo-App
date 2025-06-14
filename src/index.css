@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
-body{
-  background-color: #ceefad;
+body {
+    /* Main dark gradient - deep blues and purples */
+    background: linear-gradient(135deg, 
+        #0f0f23 0%, 
+        #1a1a2e 25%, 
+        #16213e 50%, 
+        #0f3460 75%, 
+        #332563 100%
+    );
+    
+    min-height: 100vh;
+    margin: 0;
+
+    color: white;
+}
+
+@media only screen and (max-width : 800px){
+  #root{
+    padding:25px
+  }
 }

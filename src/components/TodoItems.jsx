@@ -2,7 +2,7 @@ function TodoItems({ todoName, todoDate }) {
   return (
     <>
       <div className="flex justify-center">
-        <div className=" bg-amber-100 card card-side bg-base-100 shadow-sm flex w-3xl h-14 mt-10 mb  border-2 justify-around p-5 rounded-2xl text-lg items-center">
+        <div className="  card card-side bg-base-100 shadow-sm flex w-3xl h-14 mt-10 mb  border-2 justify-around p-5 rounded-2xl text-lg items-center">
           <div className="name font-semibold">{todoName}</div>
           <div className="date text-gray-600">{todoDate}</div>
           <button className="relative inline-flex w-25 h-9 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-slate-50">
