@@ -4,7 +4,11 @@ function TodoList({ todoItems }) {
   return (
     <>
       {todoItems.map((item) => (
-        <TodoItems todoName={item.name} todoDate={item.date}></TodoItems>
+        <TodoItems
+          key={item.id}
+          todoName={item.name}
+          todoDate={item.date}
+        ></TodoItems>
       ))}
     </>
   );
