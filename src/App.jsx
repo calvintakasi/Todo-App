@@ -20,13 +20,19 @@ function App() {
 
     setodoItems(newTodoItems);
   }
+
+  function handleDelete(id) {
+    const newTodoItems = todoItems.filter((item) => item.id !== id);
+    setodoItems(newTodoItems);
+  }
+
   return (
     <>
       <Header></Header>
       <AddTodo handleClick={handleClick}></AddTodo>
 
       {todoItems.length === 0 && <Message></Message>}
-      <TodoList todoItems={todoItems}></TodoList>
+      <TodoList todoItems={todoItems} handleDelete={handleDelete}></TodoList>
       <Footer></Footer>
     </>
   );
