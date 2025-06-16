@@ -21,8 +21,12 @@ function TodoItems({ todoName, todoDate, id, handleDelete }) {
             </svg>
           </label>
 
-          <div className="name font-semibold">{todoName}</div>
-          <div className="date text-gray-600">{todoDate}</div>
+          <div className="name font-semibold text-base sm:text-sm">
+            {todoName}
+          </div>
+          <div className="date text-gray-600 text-base sm:hidden md:block">
+            {todoDate}
+          </div>
           <button
             className="relative inline-flex w-25 h-9 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-slate-50"
             onClick={() => handleDelete(id)}
